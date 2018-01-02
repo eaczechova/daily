@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+  background-color: RGB(31,39,47);
+}
+
+.container {
+  display: grid;
+  max-width: 100%;
+  grid-gap: 10px;
+  margin: 10px;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: repeat(3,100px);
+  justify-content: center;
+  align-content: end;
+}
+
+.container-2 {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px;
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+.item-1 {
+  background: linear-gradient(to bottom right, RGB(191, 147, 250) , RGB(241, 100, 245));
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  justify-content: center;
+  padding-top: 75px;
+}
+
+.item-2 {
+  background: linear-gradient(to bottom right, RGB(99,190,242), RGB(104, 220, 222));
+  grid-column-start:2;
+  grid-column-end: 3;
+  padding-top: 30px;
+}
+
+.item-3 {
+  background: linear-gradient(to bottom left, RGB(99,190,242), RGB(104, 220, 222));
+  grid-column-start:2;
+  grid-column-end: 3;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.item-4 {
+  background: linear-gradient(to bottom left, RGB(192, 150, 257) , RGB(241, 100, 245));
+  grid-column: 1 / 3;
+  padding-top: 30px;
+}
+
+.item-r {
+  background: linear-gradient(to bottom left, RGB(246, 100, 163), RGB(253, 202, 158));;
+  max-width: 250px;
+  padding-top: 50px;
+}
+
+/*Diamons' style*/
+
+.diamond {
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+  background: linear-gradient(225deg, lightgrey,	white);
+	width: 40px;
+	height: 40px;
+  vertical-align: middle;
+  /*//line-height to keep text in the middle, replaced padding in .diamond > span */
+  line-height: 40px;
+	border-radius: 3px;
+  transform: rotate(45deg);
+}
+
+.diamond > span {
+  display: inline-block;
+  transform: rotate(-45deg);
+}
+
+/*Titles*/
+
+h1 {
+  color: #fff;
+  text-align: center;
+  padding: 35px 0 0 0;
+  letter-spacing: 8px;
+  font-size: 2.5rem;
+  z-index: 1;
+}
+
+h2 {
+  margin-top: -33px;
+  margin-bottom: 50px;
+  z-index: 2;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.word {
+  font-family: 'Dancing Script', cursive;
+}
+
+.word-1 {
+  color: RGB(250, 226, 157);
+}
+
+.word-2 {
+  color: RGB(238, 95, 236);
+}
+
+.word-3 {
+  color: RGB(104, 213, 252);
+}
