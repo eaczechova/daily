@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: RGB(32,32,32);
+}
+
+ table {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.table-1 th {
+background-color: RGB(226, 74, 66);
+}
+
+.table-2 th {
+background-color: RGB(37, 162, 78);
+}
+
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+tr:nth-of-type(even) {
+  background: #fff;
+}
+
+th {
+  text-align: left;
+  color: #fff;
+}
+
+td, th {
+  padding: 1%;
+}
